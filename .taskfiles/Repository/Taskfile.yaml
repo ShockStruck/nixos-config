@@ -1,0 +1,12 @@
+---
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+version: "3"
+
+tasks:
+
+  force-reset:
+    desc: Reset repo back to HEAD
+    prompt: Reset repo back to HEAD... continue?
+    cmds:
+      - git reset --hard HEAD
+      - git pull origin main

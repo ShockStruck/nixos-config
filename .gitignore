@@ -1,0 +1,49 @@
+# Trash
+.DS_Store
+Thumbs.db
+# k8s
+kubeconfig
+talosconfig
+.decrypted~*.yaml
+.config.env
+*.agekey
+*.pub
+*.key
+# Private
+.private
+.bin
+# Ansible
+.venv*
+# Taskfile
+.task
+# Brew
+Brewfile.lock.json
+# intellij
+.idea
+# wiki
+wiki
+# Bootstrap
+/config.yaml
+# Terraform
+*.tfvars
+.terraform.tfstate.lock*
+.terraform/
+authorized_keys
+terraform.tfstate*
+# organize later
+/.bin/
+/.go/
+/.private/
+/.task/
+/.venv/
+/scripts/
+*.secret.env
+*.secret.yaml
+*.crt
+*.key
+.decrypted~*
+.DS_Store
+Brewfile.lock.json
+Thumbs.db
+kubeconfig
+talosconfig

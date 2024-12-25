@@ -1,2 +1,5 @@
-flake.lock filter=git-crypt diff=git-crypt
-secrets/** filter=git-crypt diff=git-crypt
+* text=auto eol=lf
+*.yaml.j2 linguist-language=YAML
+*.sops.* diff=sopsdiffer
+flake.lock diff=sopsdiffer
+secrets/** diff=sopsdiffer
