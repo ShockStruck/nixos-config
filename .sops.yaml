@@ -1,23 +1,13 @@
 ---
 creation_rules:
-  - path_regex: kubernetes/.+\.sops\.yaml.j2
+  - path_regex: secrets/.+\.sops\.yaml.j2
     encrypted_regex: ^(token|crt|key|id|secret|secretboxEncryptionSecret|ca)$
     mac_only_encrypted: true
     key_groups:
       - age:
-          - "age1x67hs2jznngs2kc7wpctemewlps0qw6pcyayf4d9tvhyvvrkgu7sqz4wd2"
-  - path_regex: kubernetes/.*\.sops\.ya?ml
+          - "age1tkqegngtmhgcqqjcxwf58quer37r400dy8mn9t29mg2ngse2uvfq6zd856"
+  - path_regex: secretss/.*\.sops\.ya?ml
     encrypted_regex: "^(data|stringData)$"
     key_groups:
       - age:
-          - "age1x67hs2jznngs2kc7wpctemewlps0qw6pcyayf4d9tvhyvvrkgu7sqz4wd2"
-
-  - path_regex: terraform/.*\.sops\.env
-    key_groups:
-      - age:
-          - "age1x67hs2jznngs2kc7wpctemewlps0qw6pcyayf4d9tvhyvvrkgu7sqz4wd2"
-  # https://github.com/ansible-collections/community.sops/issues/153
-  - path_regex: /dev/stdin
-    key_groups:
-      - age:
-          - "age1x67hs2jznngs2kc7wpctemewlps0qw6pcyayf4d9tvhyvvrkgu7sqz4wd2"
+          - "age1tkqegngtmhgcqqjcxwf58quer37r400dy8mn9t29mg2ngse2uvfq6zd856"
