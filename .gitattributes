@@ -1,5 +1,1 @@
-* text=auto eol=lf
-*.yaml.j2 linguist-language=YAML
-*.sops.* diff=sopsdiffer
-flake.lock diff=sopsdiffer
-secrets/** diff=sopsdiffer
+*.yaml diff=sopsdiffer
