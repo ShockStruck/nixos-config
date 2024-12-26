@@ -6,6 +6,3 @@ creation_rules:
     key_groups:
       - age:
           - *admin_shock
-    key_groups:
-      - age:
-          - *admin_shock
