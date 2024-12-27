@@ -2,7 +2,7 @@
 keys:
   - &admin_shock age1tkqegngtmhgcqqjcxwf58quer37r400dy8mn9t29mg2ngse2uvfq6zd856
 creation_rules:
-  - path_regex: secrets/[^/]+\.yaml$
+  - path_regex: secrets/.*\.yaml$
     key_groups:
       - age:
           - *admin_shock
