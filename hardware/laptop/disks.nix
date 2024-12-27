@@ -1,6 +1,6 @@
 { config, lib, inputs, pkgs, modulesPath, isIso, ... }:
 let
-  HDD = "/dev/disk/by-id/wwn-0x5000c5009e0984c7";
+  HDD = "/dev/disk/by-id/nvme-SKHynix-HFS512GDE9X081N_CNA7N52561CA07I3C";
 
   partitionsCreateScript = ''
     parted -s "${HDD}" mklabel gpt
