@@ -45,7 +45,7 @@
     nameservers = [ "127.0.0.1" ];
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 80 22 9090 ];
+      #allowedTCPPorts = [ 80 22 9090 ];
       # networking.firewall.allowedUDPPorts = [ ... ];
       # Or disable the firewall altogether.
     };
