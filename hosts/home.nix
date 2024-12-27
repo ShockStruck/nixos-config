@@ -132,8 +132,8 @@
     git = {
       enable = true;
       package = pkgs.gitFull;
-      userName = "Baitinq";
-      userEmail = "manuelpalenzuelamerino@gmail.com";
+      userName = "ShockStruck";
+      userEmail = "github@kevinbarbieri.com";
       signing = {
         signByDefault = true;
         key = "18BE4F736F27FC190C1E1000BB3C0BC698650937";
