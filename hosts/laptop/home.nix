@@ -4,8 +4,6 @@
     xorg.xmodmap
     trackma
     adl
-    git
-    sops
   ] ++
   (with pkgs.custom; [
   ]);

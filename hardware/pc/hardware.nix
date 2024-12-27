@@ -14,7 +14,7 @@ in
       kernelModules = [ ];
     };
     kernelPackages = pkgs.linuxPackages_latest;
-    kernelModules = [ "kvm_intel" "amdgpu" ];
+    kernelModules = [ "kvm_amd" "amdgpu" ];
     extraModulePackages = [ ];
     kernelParams = [ "boot.shell_on_fail" "net.ifnames=0" "biosdevname=0" "iomem=relaxed" "mitigations=off" ];
   };
@@ -29,7 +29,7 @@ in
   };
 
   hardware = {
-    cpu.intel.updateMicrocode = true;
+    cpu.amd.updateMicrocode = true;
 
     graphics = {
       enable = true;

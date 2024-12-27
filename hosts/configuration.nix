@@ -128,6 +128,7 @@
     strace
     fzf
     powertop
+    sops
     inputs.deploy-rs.defaultPackage."${system}"
   ];
 
