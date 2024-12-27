@@ -5,7 +5,9 @@
     adl
     jetbrains.idea-community
     gimp
+    git
     godot_4
+    sops
   ] ++
   (with pkgs.custom; [
   ]);
