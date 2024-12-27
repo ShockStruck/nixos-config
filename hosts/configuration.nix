@@ -59,7 +59,7 @@
 
   users.users = {
     "root" = {
-      hashedPassword = secrets.root.hashed_password;
+      hashedPassword = secrets.root.password;
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHhCq5oKZtiUPhq3VgwgDtjT0dzzGMN/roBgLcfUHgCS (none)"
       ];
@@ -68,7 +68,7 @@
     "${user}" = {
       isNormalUser = true;
       extraGroups = [ "wheel" "audio" "video" ]; # Enable ‘sudo’ for the user.
-      hashedPassword = secrets.kevin.hashed_password;
+      hashedPassword = secrets.kevin.password;
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICQbT7Du8qct5eBHrWJ1xw2NptNzW0LyQrcuppu3UteG (none)"
       ];
