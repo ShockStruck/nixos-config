@@ -55,15 +55,15 @@
 
   outputs = inputs @ { self, nixpkgs, home-manager, nix-darwin, ... }:
     let
-      user = "baitinq";
+      user = "kevin";
 
       secrets = import ./secrets;
 
       dotfiles = ./dotfiles;
 
       hosts = [
-        { host = "phobos"; extraOverlays = [ ]; extraModules = [ ]; timezone = secrets.main_timezone; location = secrets.main_location; }
-        { host = "luna"; extraOverlays = [ ]; extraModules = [ ]; timezone = secrets.main_timezone; location = secrets.main_location; }
+        { host = "laptop"; extraOverlays = [ ]; extraModules = [ ]; timezone = secrets.main_timezone; location = secrets.main_location; }
+        { host = "main"; extraOverlays = [ ]; extraModules = [ ]; timezone = secrets.main_timezone; location = secrets.main_location; }
       ];
 
       hardwares = [

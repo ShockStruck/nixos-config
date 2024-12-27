@@ -1,7 +1,6 @@
 { config, lib, pkgs, inputs, user, hostname, location, secrets, dotfiles, ... }:
 {
   home.packages = with pkgs; [
-    minecraft
     trackma
     adl
     jetbrains.idea-community
@@ -44,10 +43,10 @@
       builtins.readFile "${dotfiles}/sxhkd/xmonad" +
       builtins.readFile "${dotfiles}/sxhkd/base" +
       ''
-      
+
         # Not supported by swhkd
         #enter and leave game mode
-        #alt + shift + F11: ctrl + shift + F11 
+        #alt + shift + F11: ctrl + shift + F11
         #    pkill -ALRM sxhkd
 
         # Make sxhkd reload its configuration files
