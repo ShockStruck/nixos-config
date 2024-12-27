@@ -149,8 +149,8 @@
           smtpserver = "smtp.gmail.com";
           smtpserverport = "587";
           smtpencryption = "tls";
-          smtpuser = "manuelpalenzuelamerino@gmail.com";
-          smtpPass = secrets.email."manuelpalenzuelamerino@gmail.com".password;
+          smtpuser = "kevin.barbieri@protonmail.com";
+          smtpPass = secrets.email."kevin.barbieri@protonmail.com".password;
         };
       };
     };
